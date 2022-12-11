@@ -321,7 +321,7 @@ function MemberData() {
         </Modal.Footer>
       </Modal>
       <button className="btn btn-danger" onClick={() => deleteme(-1)} 
-      style={{position: "absolute", left: "20px", top: "66%"}}>
+      style={{position: "absolute", left: "20px", top: "68%"}}>
           Delete Selected
       </button>  
 
