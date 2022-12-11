@@ -270,15 +270,11 @@ function MemberData() {
       selectableRows
       paginationComponent={BootyPagination}
       fixedHeader
-      fixedHeaderScrollHeight="400px"
+      fixedHeaderScrollHeight="550px"
       selectableRowsComponent={BootyCheckbox}
       highlightOnHover
       onSelectedRowsChange={setSelectedRows}
-      actions={
-        <button className="btn btn-danger" onClick={() => deleteme(-1)}>
-          Selected Delete
-        </button>
-      }
+      
       subHeader
       subHeaderComponent={
         <input
@@ -324,6 +320,11 @@ function MemberData() {
           <Button variant="primary" onClick={handleChange}>Save changes</Button>
         </Modal.Footer>
       </Modal>
+      <button className="btn btn-danger" onClick={() => deleteme(-1)} 
+      style={{position: "absolute", left: "20px", top: "66%"}}>
+          Delete Selected
+      </button>  
+
         
     </>
   );
